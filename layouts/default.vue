@@ -1,5 +1,5 @@
 <template>
-  <v-app class="primary">
+  <v-app>
      <v-navigation-drawer dark class="primary" v-model="drawer" absolute temporary>
         <v-list-item>
           <v-list-item-content>
@@ -19,6 +19,7 @@
           </v-list-item>
         </v-list>
       </v-navigation-drawer>
+
     <v-app-bar dark class="primary" height="75">
       <v-app-bar-nav-icon @click="drawer = true"></v-app-bar-nav-icon>
       <div class="logo">
@@ -60,7 +61,7 @@ export default {
           icon: 'mdi-scale-balance'
         },
         {
-          path: "/",
+          path: "/honoraires",
           name: "Honoraire",
           icon: 'mdi-cash-multiple'
         },
